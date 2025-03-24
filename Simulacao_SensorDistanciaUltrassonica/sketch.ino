@@ -12,7 +12,7 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(PIN_TRIG, LOW);  //desliga o trigger para fazer a leitura do retorna da onda produzida pelo sinal do trigger, senao ele nao para de enviar sinal
 
-  int distance = pulseIn(PIN_ECHO, HIGH); //, pulseIn() é usado para medir o tempo que o sinal ultrassônico levou para ir e voltar após refletir em um obstáculo.
+  int distance = pulseIn(PIN_ECHO, HIGH); //pulseIn() é usado para medir o tempo que o sinal ultrassônico levou para ir e voltar após refletir em um obstáculo.
   Serial.print("Distância em cm: ");
   Serial.println(distance/58); //segundo a documentaçao do sensor
 
